@@ -10,7 +10,7 @@ import AppCard from './AppCard';
         const fetchData = async () => {
         try {
            
-            const response = await axios.get('hhttp://51.20.118.62:8000/api/admin/', {
+            const response = await axios.get('http://51.20.118.62:8000/api/admin/', {
             headers: {
                 Authorization: `JWT ${accessToken}`,
             },
