@@ -25,7 +25,7 @@ const Login = () => {
         localStorage.setItem('refresh_token', refresh);
         
         // after user checking admin or not if admin redirect to admin else redirect to user profile 
-        localStorage.setItem('user_info', JSON.stringify(user_info));
+        const accessToken = localStorage.getItem('access_token');
 
 
         try{
@@ -49,7 +49,7 @@ const Login = () => {
                 const user_info=response.data.user_info;
 
                 // respose data storing in local storage
-                localStorage.setItem(user_info);
+                localStorage.setItem('user_info', JSON.stringify(user_info));
                 
                 if (user_info.is_superuser){
 
