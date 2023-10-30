@@ -32,7 +32,7 @@ const Login = () => {
 
           if (accessToken){
             const responseUser =axios.create({
-              baseURL: 'http://127.0.0.1:8000/api/check/', 
+              baseURL: 'http://51.20.118.62:8000/api/check/', 
               headers: {
 
                 'Content-Type': 'application/json',
