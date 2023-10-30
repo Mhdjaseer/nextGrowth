@@ -1,0 +1,422 @@
+/* Home.css */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0; 
+}
+
+.home-btn {
+  display: flex;
+  gap: 30px; 
+}
+
+.home-button {
+  background-color: #007acc; 
+  color: #fff; 
+  font-size: 16px; 
+  border: none;
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.home-button:hover {
+  background-color: #005a9e; 
+}
+
+
+/* Styling for the login container */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+/* Styling for the login form */
+.login-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Style for the form inputs */
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Style for the login button */
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
+
+/* nav bar */
+.background-Admin{
+  background-color: #e2e2e2;
+  height: 100vh;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.topnav {
+
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+/* Sidebar */
+.sidebar {
+  margin: 0;
+  padding: 100px;
+  width: 200px;
+  position: relative;
+  height: 73%;
+  overflow: hidden;
+  text-align: center;
+  float: left; 
+}
+/* Sidebar buttons */
+.sidebar button {
+  display: block;
+  color: black;
+  padding: 20px ;
+  margin-top: 15px;
+  text-decoration: none;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  font-size: large;
+}
+
+/* Active/current button */
+.sidebar button.active {
+  background-color: white;
+  color: rgb(109, 46, 255);
+  border: 1px solid rgb(109, 46, 255);
+}
+
+.sidebar button.sidebar-nav{
+  background-color:  rgb(109, 46, 255);
+  color:white;
+
+}
+.sidebar button.sidebar-nav:hover{
+  background-color:  white;
+  color:rgb(109, 46, 255);
+
+}
+
+
+/* Page content */
+div.content {
+  margin-top: 50px;
+  margin-left: 420px;
+  padding: 1px 16px;
+  height: 89vh; 
+  background-color: white;
+  overflow: auto; 
+}
+
+
+
+/*card */
+.card {
+  display: flex;
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  max-width: 100%;
+}
+
+.card-image {
+  flex: 1;
+  margin-right: 10px;
+  max-width: 30%;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  flex: 2;
+}
+
+.card-content h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+
+
+/* form inputes admin */
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  
+}
+.row {
+    margin: 50px; 
+}
+.row input, .row select{
+  width: 500px;
+  height: 40px;
+  border: 2px solid  rgb(109, 46, 255);
+  border-radius: 5px;
+  padding: 5px; 
+  background-color: white;
+  font-size: 16px;
+}
+.row input::placeholder {
+  font-size: 16px; 
+  color: #999; 
+}
+
+.points input {
+  outline: none;
+  padding: 5px;
+  height: 40px;
+  font-size: 16px;
+  background-color: rgb(247, 197, 131);
+  border: 2px solid rgb(236, 136, 4); 
+  border-radius: 5px;
+}
+
+.flex-container button{
+  padding: 20px;
+  width: 220px;
+  margin-top: 20px;
+  background-color: green;
+  color: white;
+  font-size: large;
+  border: none;
+  border-radius: 5px;
+}
+.flex-container button:hover{
+  background-color: rgb(109, 46, 255);
+}
+
+/* user list admin table  */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.user-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  text-align: left;
+  padding: 10px;
+}
+
+.user-table th, .user-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.user-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.user-table tr:hover {
+  background-color: #e0e0e0;
+}
+
+
+/* user card */
+.card {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: none;
+  background-color: #c4c3c3;
+  border-radius: 5px;
+  width: 95%;
+  margin: 10px;
+}
+
+.card img {
+  max-height: 150px;
+  margin-right: 20px;
+}
+
+.card-content {
+  flex: 1;
+}
+
+.heading {
+  font-size: 20px;
+  margin: 0;
+}
+
+.subheading {
+  font-size: 14px;
+  color: #0307f8;
+}
+
+.number-box {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 5px;
+  width: 150px;
+  height: 20px;
+  text-align: center;
+}
+
+.appDetials{
+  background-color: #c4c3c3;
+  width: 100%;
+  height: 820px;
+}
+
+.upload-btn {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px; 
+}
+
+.upload-btn:hover {
+  background-color: #0056b3;
+}
+
+.btn-center{
+  display: flex;
+  justify-content: center;
+}
+.close-btn{
+  background-color: #07a51c;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px; 
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  background-color: #f0f0f0; 
+}
+
+.profile-profile {
+  text-align: center;
+  background-color: #fff; 
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.profile-profile h1 {
+  font-size: 24px;
+  color: #333; 
+  margin: 0;
+}
+
+.profile-profile h2 {
+  font-size: 18px;
+  color: #777; 
+  margin-top: 10px; 
+}
+
+.points-container {
+  text-align: center;
+  padding: 20px;
+}
+
+
+.points {
+  font-size: 36px; 
+  font-weight: bold;
+  color: #007BFF; 
+}
+
+
+
+.task-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.task-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.task-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  width: 250px;
+}
+
+.task-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.task-card h1 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
