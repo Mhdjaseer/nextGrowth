@@ -25,7 +25,8 @@ const Login = () => {
         localStorage.setItem('refresh_token', refresh);
         
         // after user checking admin or not if admin redirect to admin else redirect to user profile 
-        const accessToken = localStorage.getItem('access_token');
+        localStorage.setItem('user_info', JSON.stringify(user_info));
+
 
         try{
 
